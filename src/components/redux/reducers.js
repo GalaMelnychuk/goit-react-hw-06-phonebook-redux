@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
+import { createReducer } from '@reduxjs/toolkit';
 import { Type } from "./contactsActionsTypes";
 
 // {
@@ -17,7 +18,7 @@ const contacsReducer = (state = [], {type, payload}) => {
         ]
   
     case Type.DELETE_CONTACT:
-      return state.filter((contact) => contact.contactId !== payload.contactId)
+      return state.filter((contact) => contact.contactId !== payload)
      
     default:
       return state;
@@ -29,7 +30,7 @@ const filterReducer = (state = "", {type, payload}) =>
 {
     switch (type) {
         case Type.CONTACTS_FILTER:
-          return payload.filter;
+          return payload;
         default:
           return state
       }

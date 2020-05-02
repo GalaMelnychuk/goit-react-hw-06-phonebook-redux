@@ -16,21 +16,6 @@ export const addContact  = createAction("ADD_CONTACT", ({name, number }) => ({
     }
   }));
 
-export const deleteContact = (contactId) => ({
-  type: Type.DELETE_CONTACT,
-  payload: {contactId}
-});
+export const deleteContact = createAction ("DELETE_CONTACT");
 
-export const contactsFilter = (filter) => ({
-  type: Type.CONTACTS_FILTER,
-  payload: {filter},
-});
-
-export const changeFilter = (filter) => ({
-  type: Type.CONTACTS_FILTER,
-  payload: {
-    filter,
-  }
-}
-
-)
+export const changeFilter = createAction("CONTACTS_FILTER");
