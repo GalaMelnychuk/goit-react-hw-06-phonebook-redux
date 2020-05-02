@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.headerPhone {
+  margin: 30px;
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.header {
+  margin: 30px;
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.notitication {
+  margin: 30px;
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.notiticationDiv {
+  width: 300px;
+  background-color: rgb(247, 42, 10);
+  font-weight: 400;
+  padding: 15px;
+}
